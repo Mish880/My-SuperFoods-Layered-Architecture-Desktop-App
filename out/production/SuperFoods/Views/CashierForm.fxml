@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Context2" prefHeight="543.0" prefWidth="710.0" style="-fx-background-color: #192a56;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CashierFormcontroller">
+   <children>
+      <ImageView fitHeight="166.0" fitWidth="249.0" layoutX="231.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/Logo1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="236.0" layoutY="198.0" text="MAIZECORN SUPER MARKET">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.5476190476190477" startX="0.2714285714285714" startY="0.5142857142857142">
+               <stops>
+                  <Stop color="#3af828" />
+                  <Stop color="#cfd42f" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXButton layoutX="601.0" layoutY="24.0" onAction="#openLoginFormOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #487eb0;" text="Logout" />
+      <Label layoutX="296.0" layoutY="224.0" text="Colombo SriLanka" textFill="#979696">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="512.0" text="Version 1.0.0." textFill="#a8a5a5">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Separator layoutX="24.0" layoutY="256.0" prefHeight="0.0" prefWidth="661.0" />
+      <ImageView fx:id="imgCustomer" fitHeight="100.0" fitWidth="101.0" layoutX="68.0" layoutY="302.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/customers.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgItem" fitHeight="100.0" fitWidth="100.0" layoutX="246.0" layoutY="302.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/items.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgOrder" fitHeight="100.0" fitWidth="100.0" layoutX="409.0" layoutY="302.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/orders.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgViewOrders" fitHeight="100.0" fitWidth="100.0" layoutX="564.0" layoutY="302.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/report.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMenu" layoutX="305.0" layoutY="402.0" text="Welcome" textFill="#6c9bc6">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" layoutX="184.0" layoutY="436.0" text="Please select one of the above  task to complete" textFill="#b2abab">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

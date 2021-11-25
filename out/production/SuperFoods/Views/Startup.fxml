@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Context1" prefHeight="432.0" prefWidth="536.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Startupcontroller">
+   <children>
+      <AnchorPane prefHeight="435.0" prefWidth="227.0" style="-fx-background-color: #227093;">
+         <children>
+            <Label layoutX="12.0" layoutY="28.0" text="MAIZECORN SUPER MARKET">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.05714285714285716">
+                     <stops>
+                        <Stop color="#b4bd2d" />
+                        <Stop color="#67e42d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="8.0" layoutY="408.0" text="version 1.0.0.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="49.0" text="Colombo SriLanka">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/images/Logo1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="141.0" fitWidth="205.0" layoutX="12.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/images/logo2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="312.0" layoutY="33.0" text="LOGIN HERE">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="#949494" />
+                  <Stop color="#10e319" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="236.0" layoutY="127.0" text="User Name   :" textFill="#bfbfbf">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="177.0" text="Password      :" textFill="#bfbfbf">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="333.0" layoutY="125.0" prefHeight="25.0" prefWidth="189.0" />
+      <JFXButton buttonType="RAISED" layoutX="321.0" layoutY="259.0" onAction="#openAllDashboardOnAction" prefHeight="25.0" prefWidth="141.0" ripplerFill="BLACK" style="-fx-background-color: #636e72;" text="Login">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <PasswordField fx:id="password" layoutX="333.0" layoutY="175.0" prefHeight="25.0" prefWidth="189.0" />
+   </children>
+</AnchorPane>

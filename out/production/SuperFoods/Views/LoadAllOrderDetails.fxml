@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="492.0" prefWidth="510.0" style="-fx-background-color: #95a5a6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoadAllOrderDetailscontroller">
+   <children>
+      <AnchorPane prefHeight="46.0" prefWidth="510.0" style="-fx-background-color: #1289A7;">
+         <children>
+            <Label layoutX="14.0" layoutY="10.0" text="Order Form">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblOrderForm" layoutX="16.0" layoutY="108.0" prefHeight="344.0" prefWidth="479.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Order Id" />
+          <TableColumn prefWidth="67.0" text="CustId" />
+            <TableColumn prefWidth="115.0" text="OrderDate" />
+            <TableColumn prefWidth="108.0" text="Time" />
+            <TableColumn prefWidth="113.0" text="Cost" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

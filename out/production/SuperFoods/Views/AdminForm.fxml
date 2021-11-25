@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="543.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminFormcontroller">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="543.0" prefWidth="202.0" style="-fx-background-color: #273c75;">
+         <children>
+            <Label layoutX="29.0" layoutY="23.0" text="ADMIN FORM">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="#edcf11" />
+                        <Stop color="#26a80c" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="130.0" fitWidth="185.0" layoutX="9.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/images/Logo1.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="230.0" onAction="#btnViewOrderFormOnAction" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: #95a5a6;" text=" View Order Form  " />
+            <Label layoutX="9.0" layoutY="520.0" text="Version 1.0.0." textFill="#a49c9c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="165.0" layoutX="19.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/images/Logo%203.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="200.0" prefHeight="51.0" prefWidth="510.0" style="-fx-background-color: #2c3e50;">
+         <children>
+            <Label layoutX="141.0" layoutY="4.0" text="MAIZECORN SUPER MARKET">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.22857142857142856">
+                     <stops>
+                        <Stop color="#ccc823" />
+                        <Stop color="#049e2d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="189.0" layoutY="29.0" text="Colombo SriLanka" textFill="#ababab">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="408.0" layoutY="13.0" onAction="#OpenStartupOnAction" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #487eb0;" text="Logout" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="InContext1" layoutX="200.0" layoutY="51.0" prefHeight="492.0" prefWidth="510.0" style="-fx-background-color: #7f8c8d;" />
+   </children>
+</AnchorPane>

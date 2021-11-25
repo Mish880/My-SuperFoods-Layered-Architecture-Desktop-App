@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Context6" prefHeight="510.0" prefWidth="710.0" style="-fx-background-color: #95a5a6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewOrderDetailformcontroller">
+   <children>
+      <AnchorPane prefHeight="49.0" prefWidth="710.0" style="-fx-background-color: #192a56;">
+         <children>
+            <Label layoutX="14.0" layoutY="8.0" text="Order Form" textFill="#ababab">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="568.0" layoutY="9.0" onAction="#BackToHomeOnAction" prefHeight="29.0" prefWidth="118.0" style="-fx-background-color: #27ae60;" text="&lt; Back to Home">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+         </children></AnchorPane>
+      <TableView fx:id="tblOrderForm" layoutX="44.0" layoutY="92.0" prefHeight="371.0" prefWidth="592.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Order Id" />
+          <TableColumn prefWidth="101.0" text="CustId" />
+            <TableColumn prefWidth="118.0" text="OrderDate" />
+            <TableColumn prefWidth="124.0" text="Time" />
+            <TableColumn prefWidth="172.0" text="Cost" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
