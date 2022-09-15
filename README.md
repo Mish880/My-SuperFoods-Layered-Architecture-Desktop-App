@@ -1,4 +1,4 @@
-🔰 Sipsewana Project Layered Architecture
+🔰 Maizecorn Super Market Project Layered Architecture
 
 ### Hi I'm Mishel Perera...!
 
